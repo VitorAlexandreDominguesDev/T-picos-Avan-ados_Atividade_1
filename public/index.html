@@ -7,13 +7,21 @@
         canvas { border: 1px solid #333; background: #0a5c2c; }
         label, select { font-size: 1.1em; margin: 10px 0; }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <h2>Mapa de Calor por Posição</h2>
     <label for="posicaoSelect">Selecione a posição:</label>
     <select id="posicaoSelect"></select>
+    <label for="jogadorSelect">Selecione o jogador:</label>
+    <select id="jogadorSelect"></select>
+    <span id="dadosSensor"></span>
     <br>
     <canvas id="campo" width="700" height="450"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+    
+    </div>
 </body>
 </html>
